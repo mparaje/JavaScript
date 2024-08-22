@@ -1,0 +1,99 @@
+.producto
+{
+    background-color: rgb(20, 20, 20);
+    &-input-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    &-catalogo {
+        display: flex;
+        justify-content: space-around;
+        --bs-body-bg: rgb(27, 27, 27);
+        display: grid;
+        margin: 10px;
+        padding: 10px;
+        --bs-border-color-translucent: #f8c489;
+        --bs-border-radius: 20px;
+        width: 200px;
+        height: 400px;
+        img {
+            max-width: auto;
+            border-radius: 20px;
+        }
+    }
+}
+
+.contenedor-img-tienda{
+    position: relative;
+    width: fit-content;
+}
+
+.img-tienda{
+    height: 700px;
+    max-width: auto;
+    filter: blur(5px);
+}
+
+.title-tienda{
+    font-family: "Roboto Slab", serif;
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 400px; /* Coloca el h1 en la parte superior */
+    left: 0; /* Alinea el h1 al lado izquierdo */
+    color: white; /* Cambia el color del texto para que sea visible sobre la imagen */
+    background-color: rgba(0, 0, 0, 0.193); /* Opcional: Fondo semitransparente para el texto */
+    padding: 10px; /* Añade un poco de espacio alrededor del texto */
+    width: 100%; /* Opcional: Asegura que el h1 ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+#productos-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.title-card{
+    font-family: $mainFont;
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+}
+
+#buscador{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: 1px solid #f8c489;
+}
+
+.btn-add-carrito{
+    background-color: #f8c489;
+    display: flex;
+    justify-content: center;
+    font-family: $mainFont;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.596);
+    &:hover{
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.87)
+    }
+}
+
+.price{
+    padding: 10px;
+    font-family: $mainFont;
+    color: white;
+}
+
+.card{
+    transition: 0.4s;
+    &:hover{
+        transform:scale(1.05);
+    }
+}

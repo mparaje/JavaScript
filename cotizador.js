@@ -207,9 +207,12 @@ const crearBotones = (opciones) => {
   
     items.forEach(item => {
       const btn = document.createElement("button");
+      btn.className = "btn-style";
       btn.textContent = item[itemKeyForDisplay];
       btn.addEventListener("click", () => {
         seleccionActual = item[itemKeyForValue];
+        contenedor.querySelectorAll('button').forEach(b => b.classList.remove('seleccionado'));
+        btn.classList.add('seleccionado');
       });
       contenedor.appendChild(btn);
     });
@@ -219,6 +222,7 @@ const crearBotones = (opciones) => {
     
     const btnContinuar = document.createElement("button");
     btnContinuar.textContent = "Continuar";
+    btnContinuar.className="btn-style";
     btnContinuar.addEventListener("click", () => {
       if (seleccionActual) {
         onSelectItem(seleccionActual);
@@ -236,6 +240,7 @@ const crearBotones = (opciones) => {
     
     const btnVolver = document.createElement("button");
     btnVolver.textContent = "Volver";
+    btnVolver.className="btn-style";
     btnVolver.addEventListener("click", () => {
       onBack();
     });
@@ -489,7 +494,7 @@ const mostrarResultadoCotizacion = (productoACotizar) => {
     contenedor.innerHTML = `
         <h2>Resultado de la Cotización</h2>
         <p>Costo total aproximado: $${productoACotizar.price.toFixed(2)}</p>
-        <button id="btn-nueva-cotizacion">Nueva Cotización</button>
+        <button id="btn-nueva-cotizacion" class="btn-style">Nueva Cotización</button>
     `;
 
     document.getElementById("btn-nueva-cotizacion").addEventListener("click", () => {

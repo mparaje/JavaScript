@@ -1,0 +1,36 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "category": "Inmobiliaria",
+      "description": "Una computadora portátil con procesador Intel Core i7.",
+      "image": "https://via.placeholder.com/100",
+      "price": 1199.99,
+      "title": "Silla moderna"
+    },
+    {
+      "id": 2,
+      "category": "Inmobiliaria",
+      "description": "Una computadora portátil con procesador Intel Core i7.",
+      "image": "https://via.placeholder.com/100",
+      "price": 1199.99,
+      "title": "escritorio con soporte"
+    },
+    {
+      "id": 3,
+      "category": "Inmobiliaria",
+      "description": "Una computadora portátil con procesador Intel Core i7.",
+      "image": "https://via.placeholder.com/100",
+      "price": 1199.99,
+      "title": "llavero institucional"
+    },
+    {
+      "id": 4,
+      "category": "Inmobiliaria",
+      "description": "Una computadora portátil con procesador Intel Core i7.",
+      "image": "https://via.placeholder.com/100",
+      "price": 1199.99,
+      "title": "perfil para carteleria"
+    }
+  ]
+}

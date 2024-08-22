@@ -1,0 +1,84 @@
+.footer
+{
+    &-cont{
+        display: grid;
+        align-items: center;
+        background: #f8c489;
+        width: 100%;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding-top: 20px;
+    }
+    &-box{
+        h3{
+            color:black;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        p{
+            color: black;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &-iconos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        a{
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+        }
+    }
+    &-logo{
+        width: 40px;
+        height: auto;
+        object-fit: cover;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    
+    &-copy
+    {
+        background-color: #f8c489;
+        color: rgb(145, 145, 145);
+        padding: 10px 10px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.logoFooter{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+

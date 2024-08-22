@@ -1,0 +1,117 @@
+#carrito-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.carrito-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: $mainFont;
+    &-compra{
+        border: 5px solid #f8c489;
+        margin: 20px;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        width: 30%;
+        height: auto;
+        box-shadow: 1px 2px 1px rgba(139, 135, 135, 0.538);
+        color: black;
+        border-radius: 20px;
+    }
+    &-productos{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.title-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-family: $mainFont;
+}
+
+.producto-carrito{
+    display: flex;
+    justify-content: space-around;
+    --bs-body-bg: rgb(27, 27, 27);
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    --bs-border-color-translucent: #f8c489;
+    --bs-border-radius: 20px;
+    width: 200px;
+    height: 400px;
+    img {
+        max-width: auto;
+        border-radius: 20px;
+    }
+}
+
+.btns-contenedor-carrito{
+    display: flex;
+    flex-direction: row;
+    & button{
+        color: white;
+        background-color: rgb(27, 27, 27);
+        border: 1px solid #f8c489;
+        justify-content: center;
+        font-family: $mainFont;
+        font-size: 15px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.596);
+        &:hover{
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.87)
+        }
+    }
+}
+
+.btn-eliminar{
+    background-color: #f8c489;
+    display: flex;
+    justify-content: center;
+    font-family: $mainFont;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.596);
+    &:hover{
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.87)
+    }
+}
+
+.title-carrito{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-family: $mainFont;
+    font-size: 50px;
+    color: white;
+}
+
+.title-resumen{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#confirmar-compra{
+    border-radius: 20px;
+    border: 3px solid #f8c489;
+    background-color: rgb(80, 79, 79);
+    color: white;
+    &:hover{
+        background-color: black;
+    }
+}
+
+.contenedor-compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

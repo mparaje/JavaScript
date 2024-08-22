@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-cotizador {
+    font-family: $mainFont;
+    line-height: 1.6;
+    color: #333;
+    background: url(../assets/pexels-photo-326311.jpg);
+}
+
+button {
+    background-color: white;
+    border-color: rgb(203, 203, 203);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover{
+        background-color: rgb(216, 148, 84);
+        color: white;
+    }
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+input[type="text"] {
+    padding-top: 30px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    width: 300px;
+}
+input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    width: 300px;
+}

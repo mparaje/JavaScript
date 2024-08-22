@@ -1,0 +1,16 @@
+//Base
+
+@import "base/vars";
+@import "base/reset";
+@import "base/utils";
+
+//Components
+@import "components/navbar";
+@import "components/footer";
+
+//Layout
+
+@import "layout/index";
+@import "layout/carrito";
+@import "layout/catalogo";
+@import "layout/cotizador";
