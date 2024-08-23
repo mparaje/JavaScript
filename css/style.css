@@ -85,9 +85,6 @@ header {
   --bs-nav-link-color: black;
 }
 
-.nav {
-  /* Asegura que no sea más ancho que la ventana */
-}
 .nav-item {
   padding-left: 10px;
   padding-right: 10px;
