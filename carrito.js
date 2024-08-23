@@ -83,18 +83,35 @@ const actualizarResumenCarrito= () => {
 function confirmarCompra() {
   if (carrito.length > 0) {
     const total = calcularTotal();
-    const confirmacion = confirm(`¿Estás seguro de que deseas confirmar tu compra por $${total}?`);
-    
-    if (confirmacion) {
-      alert('¡Gracias por tu compra!');
-      carrito.length = 0; // Vaciar el carrito
-      localStorage.setItem('carrito', JSON.stringify(carrito));
-      renderProductosCarrito(carrito);
-      document.getElementById('total-compra').textContent = 'Total: $0.00';
-      // Aquí podrías agregar código adicional, como redirigir a una página de confirmación
+    Swal.fire({
+      title: `¿Estás seguro de que deseas confirmar tu compra por $${total}?`,
+      showDenyButton: true,
+      confirmButtonText: "Si",
+      denyButtonText: `No`,
+    }).then((res) => {
+      if (res.isConfirmed) {
+        Swal.fire({
+          title: "Gracias por su compra",
+          icon: "success",
+          iconColor: "black",
+          confirmButtonColor: "black",
+          position: "center",
+        })
+        carrito.length = 0; // Vaciar el carrito
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        renderProductosCarrito(carrito);
+        document.getElementById('total-compra').textContent = 'Total: $0.00';
     }
-  } else {
-    alert('Tu carrito está vacío. Agrega productos para continuar.');
+    })
+      
+      // Aquí podrías agregar código adicional, como redirigir a una página de confirmación
+  }
+  else{
+    Swal.fire({
+      title: "Tu carrito esta vacío. Añade productos para continuar",
+      confirmButtonColor: "black",
+      position: "center",
+    })  
   }
 }
 

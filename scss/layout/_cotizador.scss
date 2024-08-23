@@ -64,6 +64,8 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+#btn-cont-
+
 #btn-categorias button.seleccionado,
 #btn-productos button.seleccionado,
 #btn-materiales button.seleccionado,
@@ -80,6 +82,10 @@
     font-size: 50px;
 }
 
-.btn-style{
+.btn-style, #btn-cont-dimensiones, #btn-volv-dimensiones, #btn-cont-cantidad,#btn-volv-cantidad{
     border-radius: 20px;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
 }

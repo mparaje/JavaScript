@@ -490,7 +490,7 @@ figure {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#btn-categorias button.seleccionado,
+#btn-cont- #btn-categorias button.seleccionado,
 #btn-productos button.seleccionado,
 #btn-materiales button.seleccionado,
 #btn-estilos button.seleccionado {
@@ -506,8 +506,14 @@ figure {
   font-size: 50px;
 }
 
-.btn-style {
+.btn-style, #btn-cont-dimensiones, #btn-volv-dimensiones, #btn-cont-cantidad, #btn-volv-cantidad {
   border-radius: 20px;
 }
+
+.btn-style:hover, #btn-cont-dimensiones:hover, #btn-volv-dimensiones:hover, #btn-cont-cantidad:hover, #btn-volv-cantidad:hover {
+  background-color: black;
+  color: white;
+}
+
 
 /*# sourceMappingURL=style.css.map */
